@@ -16,3 +16,102 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+/* General */
+
+/* Archive product*/
+.quick_view_button {
+	display: none!important;
+}
+.woocommerce ul.products li.product .onsale,
+.product .onsale {
+	width: 96px!important;
+	border-radius: 10px!important;
+	line-height: 30px!important;
+	height: 20px!important;
+	display: inline-block!important;
+	padding: 0 10px;
+	margin: 5px!important;
+}
+.post_thumb .woo_thumb_buttons {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+.post_thumb:hover .woo_thumb_buttons {
+	opacity: 1;
+}
+/* Single product*/
+.related > h2 { font-size: 22px; }
+@media(min-width: 480px){
+	.related li { width: 33.3333%!important; }
+}
+
+/* WC*/
+
+/* Sidebar */
+.sidebar_inner {
+	padding: 0 25px!important;
+}
+.aws-search-form input {
+	border-bottom: 1px solid #256d3c;
+}
+
+/* Videos */
+.page-id-2950 .isotope_item .post_content,
+.page-id-3037 .isotope_item .post_content {
+	display: none!important;
+}
+
+/* Blog */
+.isotope_item {
+	padding: 0px!important;
+}
+.isotope_item .post_item {
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+.isotope_item .post_title {
+	margin: 5px 0!important;
+}
+
+	/*Ocultar elementos de expert*/
+.isotope_item .post_descr blockquote {
+	display: none!important;
+}
+
+	/*Ocultar post de video en blog general*/
+.page-id-3028 .post_format_video,
+.page-id-3028 .post_format_status,
+.page-id-3028 .post_format_aside,
+.page-id-3028 .post_format_chat,
+.page-id-3028 .post_format_audio,
+.page-id-3028 .post_format_link {
+	display: none!important;
+}
+
+/* Elementos theme */
+.sc_blogger .isotope_filters {
+	margin-top: 0px!important;
+}
+.page_content_wrap {
+	padding: 20px!important;
+}
+
+/* Header */
+.top_panel_title .top_panel_title_inner {
+	background-color: #256d3c!important;
+}
+.top_panel_title .top_panel_title_inner a,
+.top_panel_title .top_panel_title_inner h1,
+.top_panel_title .top_panel_title_inner span.current {
+	color: #fff!important;
+}
+.top_panel_title .top_panel_title_inner span.current {
+	border-bottom: 1px solid #fff;
+}
