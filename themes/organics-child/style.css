@@ -272,3 +272,40 @@ div.wpcf7-response-output {
 	    width: 100%;
 	}
 }
+
+/* Mi cuenta */
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {
+	display: none;
+}
+
+/* Checkout */
+abbr.required {
+	text-decoration: none!important;
+}
+.woocommerce-checkout .col2-set,
+.woocommerce-checkout .box-review {
+	display: inline-block;
+}
+.woocommerce-checkout .col2-set {
+    width: 55%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.woocommerce-checkout .col2-set input {
+	height: 34px;
+	border: 1px solid #e2e2e2;
+}
+.woocommerce-checkout .box-review {
+	width: 45%;
+	box-sizing: border-box;
+    float: right;
+    padding: 0 20px;
+    border: 2px solid green;
+}
+.woocommerce-checkout .box-review h3 {
+	padding-top: 20px!important;
+	text-align: center;
+}
+.woocommerce-checkout .box-review #order_review {
+	margin-bottom: 0px!important;
+}
