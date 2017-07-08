@@ -120,7 +120,7 @@ if (in_array('open_hours', $top_panel_top_components) && ($open_hours=trim(organ
                 $current_user = wp_get_current_user();
                 ?>
                 <li class="menu_user_controls">
-                    <a href="<?php site_url('mi-cuenta'); ?>"><?php
+                    <a href="<?php echo site_url('/my-account'); ?>"><?php
                         $user_avatar = '';
                         if ($current_user->user_email) $user_avatar = get_avatar($current_user->user_email, 16*min(2, max(1, organics_get_theme_option("retina_ready"))));
                         if ($user_avatar) {

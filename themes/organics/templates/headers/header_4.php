@@ -28,17 +28,17 @@ if ( !function_exists( 'organics_template_header_4_output' ) ) {
 		$header_css = '';
 		if ($post_options['position'] != 'over') {
 			$header_image = get_header_image();
-			$header_css = $header_image!='' 
-				? ' style="background: url('.esc_url($header_image).') repeat center top"' 
+			$header_css = $header_image!=''
+				? ' style="background: url('.esc_url($header_image).') repeat center top"'
 				: '';
 		}
 		?>
-		
+
 		<div class="top_panel_fixed_wrap"></div>
 
 		<header class="top_panel_wrap top_panel_style_4 scheme_<?php echo esc_attr($post_options['scheme']); ?>">
 			<div class="top_panel_wrap_inner top_panel_inner_style_4 top_panel_position_<?php echo esc_attr(organics_get_custom_option('top_panel_position')); ?>">
-			
+
 			<?php if (organics_get_custom_option('show_top_panel_top')=='yes') { ?>
 				<div class="top_panel_top">
 					<div class="content_wrap clearfix">
@@ -55,7 +55,7 @@ if ( !function_exists( 'organics_template_header_4_output' ) ) {
 					<div class="columns_wrap columns_fluid"><div
 						class="column-1_6 contact_logo">
 							<?php require_once organics_get_file_dir('templates/headers/_parts/logo.php'); ?>
-						</div><div 
+						</div><div
 						class="column-5_6 menu_main_wrap">
 							<?php
                             if (function_exists('organics_exists_woocommerce') && organics_exists_woocommerce() && (organics_is_woocommerce_page() && organics_get_custom_option('show_cart')=='shop' || organics_get_custom_option('show_cart')=='always') && !(is_checkout() || is_cart() || defined('WOOCOMMERCE_CHECKOUT') || defined('WOOCOMMERCE_CART'))) {
