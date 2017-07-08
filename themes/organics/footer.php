@@ -11,6 +11,16 @@ get_sidebar();
 if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapper();	// <!-- </.content_wrap> -->
 ?>
 
+    <?php if ( !is_page('servicios') ) : ?>
+        <!-- shortcode Únete -->
+        <div class="content_wrap [ unete-footer ]">
+            <?php echo do_shortcode('
+                [vc_row][vc_column][vc_cta h2="Únete" h4="Forma parte de Plants in a Bottle y adquiere todos los beneficios doTERRA" txt_align="center" shape="square" style="flat" color="black" add_button="bottom" btn_title="haz click aquí" btn_style="3d" btn_color="violet" btn_size="lg" btn_align="center" btn_css_animation="bottom-to-top" css_animation="bottom-to-top" css=".vc_custom_1497121685552{background-image: url(http://localhost:8888/pixab/wp-content/uploads/2015/08/hero-1.jpg?id=2887) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border: 0px groove #256d3c !important;}" btn_link="url:%23||"][/vc_cta][/vc_column][/vc_row]
+            ');; ?>
+        </div>
+    <?php endif; ?>
+
+
 </div>		<!-- </.page_content_wrap> -->
 
 <?php
