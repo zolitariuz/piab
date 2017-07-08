@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-30 15:03:23+0000\n"
+"PO-Revision-Date: 2017-07-07 19:09:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,151 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es_MX\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: templates/checkout/terms.php:25
+msgid "I&rsquo;ve read and accept the <a href=\"%s\" class=\"woocommerce-terms-and-conditions-link\">terms &amp; conditions</a>"
+msgstr "He leído y acepto los <a href=\"%s\" class=\"woocommerce-terms-and-conditions-link\">términos y condiciones</a>"
+
+#. translators: 1: rating 2: rating count
+#: includes/wc-template-functions.php:2617
+msgid "Rated %1$s out of 5 based on %2$s customer rating"
+msgid_plural "Rated %1$s out of 5 based on %2$s customer ratings"
+msgstr[0] "Calificación de %1$s de 5 con base en %2$s opinión"
+msgstr[1] "Calificación de %1$s de 5 con base en %2$s opiniones"
+
+#: includes/wc-product-functions.php:751
+msgid "Search results only"
+msgstr "Sólo en búsquedas"
+
+#. translators: use local order of street name and house number.
+#: includes/class-wc-countries.php:590
+msgid "House number and street name"
+msgstr "Calle y número"
+
+#: includes/wc-product-functions.php:750
+msgid "Shop only"
+msgstr "Sólo en tienda"
+
+#: includes/wc-product-functions.php:749
+msgid "Shop and search results"
+msgstr "Tienda y búsquedas"
+
+#: includes/shortcodes/class-wc-shortcode-checkout.php:107
+msgid "This order cannot be paid for. Please contact us if you need assistance."
+msgstr "No se puede realizar el pago del pedido. Por favor contáctanos si necesitas ayuda."
+
+#: includes/shortcodes/class-wc-shortcode-checkout.php:99
+msgid "Please log in to your account below to continue to the payment form."
+msgstr "Por favor inicia sesión con tu cuenta para seguir a las formas de pago."
+
+#: includes/import/class-wc-product-csv-importer.php:754
+msgid "No matching product exists to update."
+msgstr "No hay productos que coincidan para actualizar."
+
+#: includes/import/class-wc-product-csv-importer.php:749
+msgid "A product with this SKU already exists."
+msgstr "Ya existe un producto con ese SKU."
+
+#: includes/import/class-wc-product-csv-importer.php:744
+msgid "A product with this ID already exists."
+msgstr "Ya existe un producto con este ID."
+
+#: includes/import/class-wc-product-csv-importer.php:703
+msgid "SKU %s"
+msgstr "SKU %s"
+
+#: includes/import/class-wc-product-csv-importer.php:700
+msgid "ID %d"
+msgstr "ID %d"
+
+#: includes/import/abstract-wc-product-importer.php:556
+msgid "Not able to attach \"%s\"."
+msgstr "No se puede adjuntar \"%s\"."
+
+#: includes/import/abstract-wc-product-importer.php:405
+msgid "Variation cannot be imported: Missing parent ID or parent does not exist yet."
+msgstr "No pudo importarse variación: Falta el ID del producto padre o aún no existe."
+
+#: includes/import/abstract-wc-product-importer.php:180
+msgid "Invalid product ID %d."
+msgstr "ID de producto no válido %d."
+
+#: includes/admin/helper/views/html-helper-compat.php:5
+msgid "We've made things simpler and easier to manage moving forward. From now on you can manage all your WooCommerce purchases directly from the Extensions menu within the WooCommerce plugin itself. <a href=\"%s\">View and manage</a> your extensions now."
+msgstr "Hicimos las cosas más simples y fáciles de administrar en adelante. Desde ahora puedes administrar todas tus compras de WooCommerce directamente desde el menú de Extensiones dentro del plugin de WooCommerce. <a href=\"%s\">Ver y administrar</a> tus extensiones ahora."
+
+#: includes/admin/helper/views/html-main.php:132
+msgid "Installed Extensions without a Subscription"
+msgstr "Extensiones instaladas sin suscripción."
+
+#: includes/admin/helper/views/html-main.php:125
+msgid "Could not find any subscriptions on your WooCommerce.com account"
+msgstr "No pudimos encontrar alguna suscripción en tu cuenta de WooCommerce.com"
+
+#: includes/admin/helper/views/html-main.php:85
+#: includes/admin/helper/views/html-main.php:88
+#: includes/admin/helper/views/html-main.php:95
+#: includes/admin/helper/views/html-main.php:98
+#: includes/admin/helper/views/html-main.php:149
+#: includes/admin/helper/views/html-main.php:152
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: includes/admin/helper/views/html-main.php:70
+msgid "Upgrade"
+msgstr "Actualizar"
+
+#: includes/admin/helper/views/html-main.php:62
+msgid "Shared by %s"
+msgstr "Compartido por %s"
+
+#: includes/admin/helper/views/html-main.php:59
+msgid "Subscription: Unlimited"
+msgstr "Suscripción: Ilimitada"
+
+#. translators: %1$d: sites active, %2$d max sites active
+#: includes/admin/helper/views/html-main.php:57
+msgid "Subscription: Using %1$d of %2$d sites available"
+msgstr "Suscripción: Usando %1$d de %2$d sitios disponibles"
+
+#. translators: %1$d: sites active, %2$d max sites active
+#: includes/admin/helper/views/html-main.php:54
+msgid "Subscription: Not available - %1$d of %2$d already in use"
+msgstr "Suscripción: No disponible - %1$d de %2$d ya están en uso"
+
+#: includes/admin/helper/views/html-main.php:44
+msgid "Expires on:"
+msgstr "Expira el:"
+
+#: includes/admin/helper/views/html-main.php:39
+msgid "Expiring soon!"
+msgstr "¡Expirará pronto!"
+
+#: includes/admin/helper/views/html-main.php:34
+msgid "Auto renews on:"
+msgstr "Se auto renueva el:"
+
+#: includes/admin/helper/views/html-main.php:29
+msgid "Expired :("
+msgstr "Expirado :("
+
+#: includes/admin/helper/views/html-main.php:12
+msgid "Below is a list of products available on your WooCommerce.com account. To receive plugin updates please make sure the product is installed, activated and connected to your WooCommerce.com account."
+msgstr "Debajo hay una lista de productos disponibles en tu cuenta de WooCommerce.com. Para recibir actualizaciones de plugins, por favor asegúrate de tener instalado y activado el producto y conectarlo a tu cuenta de WooCommerce.com."
+
+#: includes/admin/helper/views/html-main.php:10
+msgid "Subscriptions"
+msgstr "Suscripciones"
+
+#: includes/admin/helper/views/html-main.php:5
+#: includes/admin/helper/views/html-oauth-start.php:5
+#: includes/admin/views/html-admin-page-addons.php:19
+msgid "WooCommerce Extensions"
+msgstr "Extensiones de WooCommerce"
+
+#: includes/admin/importers/class-wc-product-csv-importer-controller.php:95
+msgid "Done!"
+msgstr "¡Listo!"
 
 #: includes/admin/class-wc-admin-post-types.php:1839
 msgid "This is a featured product"
@@ -158,6 +303,68 @@ msgstr "Instalar y activar Storefront"
 #: includes/admin/class-wc-admin-setup-wizard.php:825
 msgid "<strong>Optimized for search:</strong> Valid schema markup for improved SEO performance."
 msgstr "<strong>Optimizado para búsquedas:</strong> Un schema markup válido para un desempeño SEO mejorado."
+
+#: includes/admin/helper/views/html-helper-compat.php:4
+msgid "Looking for the WooCommerce Helper?"
+msgstr "¿Buscas el WooCommerce Helper?"
+
+#. translators: %1$s: helper url, %2$d: number of extensions
+#: includes/admin/helper/class-wc-helper.php:1143
+msgid "Note: You currently have <a href=\"%1$s\">%2$d extension</a> which should be updated first before updating WooCommerce."
+msgid_plural "Note: You currently have <a href=\"%1$s\">%2$d extensions</a> which should be updated first before updating WooCommerce."
+msgstr[0] "Nota: Actualmente tienes <a href=\"%1$s\">%2$d extensión</a> la cual debería ser actualizada antes de actualizar WooCommerce."
+msgstr[1] "Nota: Actualmente tienes <a href=\"%1$s\">%2$d extensiones</a> las cuales deberían ser actualizadas antes de actualizar WooCommerce."
+
+#: includes/admin/helper/class-wc-helper.php:431
+msgid "Authentication and subscription caches refreshed successfully."
+msgstr "Cache de autenticación y suscripción recargado exitosamente."
+
+#: includes/admin/helper/class-wc-helper.php:424
+msgid "You have successfully disconnected your store from WooCommerce.com"
+msgstr "Has desconectado exitosamente tu tienda de WooCommerce.com"
+
+#: includes/admin/helper/class-wc-helper.php:417
+msgid "You have successfully connected your store to WooCommerce.com"
+msgstr "Has conectado exitosamente tu tienda con WooCommerce.com"
+
+#. translators: %1$s: product name, %2$s: plugins screen url
+#: includes/admin/helper/class-wc-helper.php:410
+msgid "An error has occurred when deactivating the extension %1$s. Please proceed to the <a href=\"%2$s\">Plugins screen</a> to deactivate it manually."
+msgstr "Ha ocurrido un error al desactivar la extensión %1$s. Por favor ve a la <a href=\"%2$s\">sección de plugins</a> para desactivarla manualmente."
+
+#. translators: %s: product name
+#: includes/admin/helper/class-wc-helper.php:400
+msgid "The extension %s has been deactivated successfully."
+msgstr "La extensión %s fue desactivada correctamente."
+
+#. translators: %s: product name
+#: includes/admin/helper/class-wc-helper.php:390
+msgid "An error has occurred when deactivating the subscription for %s. Please try again later."
+msgstr "Ha ocurrido un error al desactivar la suscripción de %s. Por favor intenta de nuevo más tarde."
+
+#. translators: %1$s: product name, %2$s: deactivate url
+#: includes/admin/helper/class-wc-helper.php:375
+msgid "Subscription for %1$s deactivated successfully. You will no longer receive updates for this product. <a href=\"%2$s\">Click here</a> if you wish to deactive the plugin as well."
+msgstr "La suscripción de %1$s ha sido desactivada. Ya no recibirás actualizaciones para este producto. <a href=\"%2$s\">Haz clic aquí</a> si deseas desactivar el plugin también."
+
+#. translators: %s: product name
+#: includes/admin/helper/class-wc-helper.php:362
+msgid "Subscription for %s deactivated successfully. You will no longer receive updates for this product."
+msgstr "Desactivaste la suscripción de %s. No recibirás más actualizaciones para este producto."
+
+#. translators: %s: product name
+#: includes/admin/helper/class-wc-helper.php:352
+msgid "An error has occurred when activating %s. Please try again later."
+msgstr "Ocurrió un error al activar %s. Por favor intenta de nuevo más tarde."
+
+#. translators: %s: product name
+#: includes/admin/helper/class-wc-helper.php:342
+msgid "%s activated successfully. You will now receive updates for this product."
+msgstr "%s activado. Ahora recibirás actualizaciones para este producto."
+
+#: includes/admin/helper/class-wc-helper.php:286
+msgid "To receive updates and support for this extension, you need to <strong>purchase</strong> a new subscription or <a href=\"%1$s\" target=\"_blank\">be added as a collaborator</a>."
+msgstr "Para recibir actualizaciones y soporte para esta extensión, debes <strong>comprar</strong> una nueva suscripción o <a href=\"%1$s\" target=\"_blank\">ser agregado como colaborador</a>."
 
 #: includes/admin/class-wc-admin-api-keys.php:84
 msgid "Create an API key"
@@ -8449,11 +8656,6 @@ msgstr "Hola, se acaba de añadir una nota a tu pedido:"
 msgid "For your reference, your order details are shown below."
 msgstr "Para tu referencia, los detalles de tu pedido se muestran a continuación."
 
-#: templates/emails/customer-processing-order.php:28
-#: templates/emails/plain/customer-processing-order.php:25
-msgid "Your order has been received and is now being processed. Your order details are shown below for your reference:"
-msgstr "Tu pedido se ha recibido y se está procesando. Para tu información, los detalles del pedido son los siguientes."
-
 #: templates/emails/customer-refunded-order.php:30
 msgid "Hi there. Your order on %s has been partially refunded."
 msgstr "Hola! Tu pedido en %s ha sido parcialmente reembolsado."
@@ -8756,6 +8958,11 @@ msgstr "Se ha creado un pedido para ti en %1$s. Para pagar este pedido por favor
 #: templates/auth/form-login.php:31
 msgid "To connect to %1$s you need to be logged in. Log in to your store below, or <a href=\"%2$s\">cancel and return to %1$s</a>"
 msgstr "Para conectarte a %1$s debes iniciar sesión. Accesa a tu tienda abajo, o <a href=\"%2$s\">cancela y regresa a %1$s</a>"
+
+#: templates/emails/customer-processing-order.php:28
+#: templates/emails/plain/customer-processing-order.php:25
+msgid "Your order has been received and is now being processed. Your order details are shown below for your reference:"
+msgstr "Hemos recibido tu pedido y lo estaremos procesando. Para tu información, los detalles de tu pedido son los siguientes."
 
 #: includes/class-wc-post-types.php:522
 msgid "Failed <span class=\"count\">(%s)</span>"
