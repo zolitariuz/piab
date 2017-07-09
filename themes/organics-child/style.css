@@ -84,6 +84,10 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 .price {
 	font-weight: 600!important;
 }
+fieldset {
+	padding: 0px;
+	margin: 0px;
+}
 
 /* Sidebar */
 .sidebar_inner {
@@ -340,7 +344,8 @@ abbr.required {
     padding-right: 20px;
     box-sizing: border-box;
 }
-.woocommerce-checkout .col2-set input {
+.woocommerce-checkout .col2-set input,
+.woocommerce-account input {
 	height: 34px;
 	border: 1px solid #e2e2e2;
 }
@@ -494,4 +499,13 @@ abbr.required {
 	top: 3px;
     box-shadow: 0 2px 0 #6e48b1;
     color: #fff;
+}
+
+/* Mi cuenta */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	display: none;
+}
+.woocommerce-account .woocommerce-MyAccount-content {
+    float: none;
+    width: 100%;
 }
