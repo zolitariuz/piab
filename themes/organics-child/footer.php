@@ -180,6 +180,7 @@ if (organics_get_custom_option('show_theme_customizer')=='yes') {
 <?php echo force_balance_tags(organics_get_custom_option('gtm_code2')); ?>
 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/functions.js"></script>
 
 </body>
 </html>
