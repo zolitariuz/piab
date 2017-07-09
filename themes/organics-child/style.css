@@ -433,14 +433,21 @@ abbr.required {
 }
 
 /* Post */
+.page article > .post_info {
+	display: none;
+}
 .post_info {
-	margin-bottom: 3px!important;
+	margin-bottom: 5px!important;
 }
 .post_info_date {
 	font-family: Cantarell;
 }
-.post_info_counters {
+.post_info_counters,
+.post_info_posted_by {
 	display: none;
+}
+.post_info_tags {
+
 }
 .sc_socials .icon-facebook,
 .sc_socials .icon-twitter-1 {
@@ -452,6 +459,7 @@ abbr.required {
 	background-color: #2A2A2A;
 	padding: 28px;
 	text-align: center;
+	margin-top: 20px;
 }
 .box-unete h2 {
 	font-family: Raleway;
