@@ -81,6 +81,9 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 .woocommerce input.button:disabled[disabled] {
 	color: #fff;
 }
+.price {
+	font-weight: 600!important;
+}
 
 /* Sidebar */
 .sidebar_inner {

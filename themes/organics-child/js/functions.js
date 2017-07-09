@@ -9,6 +9,7 @@ var $=jQuery.noConflict();
 		\*------------------------------------*/
 
 		$(document).ready(function() {
+
 		});
 
 		$(".btn-scroll-unete a").click(function() {

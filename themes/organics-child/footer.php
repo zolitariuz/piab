@@ -3,17 +3,18 @@
  * The template for displaying the footer.
  */
 
-organics_close_wrapper();	// <!-- </.content> -->
+organics_close_wrapper();   // <!-- </.content> -->
 
 // Show main sidebar
 get_sidebar();
 
-if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapper();	// <!-- </.content_wrap> -->
+if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapper();   // <!-- </.content_wrap> -->
 ?>
 
     <?php if ( !is_page(array('servicios', 'unete')) ) : ?>
         <!-- shortcode Únete -->
-        <div class="content_wrap [ unete-footer ]">
+        <div class="[ clearfix ]"></div>
+         <section class="content_wrap [ unete-footer ]">
             <div class="vc_row wpb_row vc_row-fluid">
                 <div class="wpb_column vc_column_container vc_col-sm-12">
                     <div class="vc_column-inner ">
@@ -29,7 +30,7 @@ if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapp
                                         </div>
                                         <div class="vc_cta3-actions">
                                             <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_bottom-to-top vc_btn3-center wpb_start_animation">
-                                             <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-violet" href="<?php echo site_url('/unete'); ?>" title="">haz click aquí</a>
+                                                <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-violet" href="<?php echo site_url('/unete'); ?>" title="">haz click aquí</a>
                                             </div>
                                         </div>
                                     </div>
@@ -39,11 +40,10 @@ if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapp
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     <?php endif; ?>
 
-
-</div>		<!-- </.page_content_wrap> -->
+</div>      <!-- </.page_content_wrap> -->
 
 <?php
 
@@ -51,7 +51,7 @@ if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapp
 $footer_show  = organics_get_custom_option('show_sidebar_footer');
 $sidebar_name = organics_get_custom_option('sidebar_footer');
 if (!organics_param_is_off($footer_show) && is_active_sidebar($sidebar_name)) {
-	organics_storage_set('current_sidebar', 'footer');
+    organics_storage_set('current_sidebar', 'footer');
     ?>
     <footer class="footer_wrap widget_area scheme_<?php echo esc_attr(organics_get_custom_option('sidebar_footer_scheme')); ?>">
         <div class="footer_wrap_inner widget_area_inner">
@@ -75,10 +75,10 @@ if (!organics_param_is_off($footer_show) && is_active_sidebar($sidebar_name)) {
                     $out = ob_get_contents();
                     ob_end_clean();
                     echo trim(chop(preg_replace("/<\/aside>[\r\n\s]*<aside/", "</aside><aside", $out)));
-                    ?></div>	<!-- /.columns_wrap -->
-            </div>	<!-- /.content_wrap -->
-        </div>	<!-- /.footer_wrap_inner -->
-    </footer>	<!-- /.footer_wrap -->
+                    ?></div>    <!-- /.columns_wrap -->
+            </div>  <!-- /.content_wrap -->
+        </div>  <!-- /.footer_wrap_inner -->
+    </footer>   <!-- /.footer_wrap -->
 <?php
 }
 
@@ -92,9 +92,9 @@ if ( organics_get_custom_option('show_googlemap')=='yes' ) {
     $map_height  = organics_get_custom_option('googlemap_height');
     if (!empty($map_address) || !empty($map_latlng)) {
         $args = array();
-        if (!empty($map_style))		$args['style'] = esc_attr($map_style);
-        if (!empty($map_zoom))		$args['zoom'] = esc_attr($map_zoom);
-        if (!empty($map_height))	$args['height'] = esc_attr($map_height);
+        if (!empty($map_style))     $args['style'] = esc_attr($map_style);
+        if (!empty($map_zoom))      $args['zoom'] = esc_attr($map_zoom);
+        if (!empty($map_height))    $args['height'] = esc_attr($map_height);
         echo trim(organics_sc_googlemap($args));
     }
 }
@@ -122,9 +122,9 @@ if (organics_get_custom_option('show_contacts_in_footer')=='yes') {
                         </address>
                     </div>
                     <?php echo trim(organics_sc_socials(array('size'=>"tiny", 'shape'=>"round"))); ?>
-                </div>	<!-- /.content_wrap -->
-            </div>	<!-- /.contacts_wrap_inner -->
-        </footer>	<!-- /.contacts_wrap -->
+                </div>  <!-- /.content_wrap -->
+            </div>  <!-- /.contacts_wrap_inner -->
+        </footer>   <!-- /.contacts_wrap -->
     <?php
     }
 }
@@ -138,13 +138,13 @@ if (!organics_param_is_off($copyright_style)) {
             <div class="content_wrap<?php if (!organics_param_is_off($footer_show) && is_active_sidebar($sidebar_name)) echo ' copyright_line'; else ''; ?>">
 
                 <?php
-				if ($copyright_style == 'menu') {
-					if (($menu = organics_get_nav_menu('menu_footer'))!='') {
-						echo trim($menu);
-					}
-				} else if ($copyright_style == 'socials') {
-					echo trim(organics_sc_socials(array('size'=>"tiny", 'shape'=>"round")));
-				}
+                if ($copyright_style == 'menu') {
+                    if (($menu = organics_get_nav_menu('menu_footer'))!='') {
+                        echo trim($menu);
+                    }
+                } else if ($copyright_style == 'socials') {
+                    echo trim(organics_sc_socials(array('size'=>"tiny", 'shape'=>"round")));
+                }
                 ?>
                 <div class="copyright_text"><?php echo force_balance_tags(do_shortcode(organics_get_custom_option('footer_copyright'))); ?></div>
                 <?php
@@ -157,12 +157,12 @@ if (!organics_param_is_off($copyright_style)) {
     </div>
 <?php } ?>
 
-</div>	<!-- /.page_wrap -->
+</div>  <!-- /.page_wrap -->
 
-</div>		<!-- /.body_wrap -->
+</div>      <!-- /.body_wrap -->
 
 <?php if ( !organics_param_is_off(organics_get_custom_option('show_sidebar_outer')) ) { ?>
-    </div>	<!-- /.outer_wrap -->
+    </div>  <!-- /.outer_wrap -->
 <?php } ?>
 
 <?php
@@ -180,7 +180,5 @@ if (organics_get_custom_option('show_theme_customizer')=='yes') {
 <?php echo force_balance_tags(organics_get_custom_option('gtm_code2')); ?>
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/functions.js"></script>
-
 </body>
 </html>
