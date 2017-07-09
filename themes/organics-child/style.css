@@ -431,3 +431,59 @@ abbr.required {
 		margin-top: 20px;
 	}
 }
+
+/* Post */
+.post_info {
+	margin-bottom: 3px!important;
+}
+.post_info_date {
+	font-family: Cantarell;
+}
+.post_info_counters {
+	display: none;
+}
+.sc_socials .icon-facebook,
+.sc_socials .icon-twitter-1 {
+	color: #fff;
+}
+
+/* Unete footer */
+.box-unete {
+	background-color: #2A2A2A;
+	padding: 28px;
+	text-align: center;
+}
+.box-unete h2 {
+	font-family: Raleway;
+	font-size: 2.6em;
+	font-weight: 600;
+	margin-bottom: 1em;
+	color: #fff;
+}
+.box-unete h4 {
+    font-family: Raleway;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    color: #fff;
+}
+.btn-secondary-theme {
+	box-shadow: 0 5px 0 #6e48b1;
+	color: #fff;
+	background-color: #8D6DC4;
+	font-size: 16px;
+	padding: 18px 25px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	position: relative;
+}
+.btn-secondary-theme:hover {
+	top: 3px;
+    box-shadow: 0 2px 0 #6e48b1;
+    color: #fff;
+}
