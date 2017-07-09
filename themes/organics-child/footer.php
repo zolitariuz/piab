@@ -14,9 +14,31 @@ if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapp
     <?php if ( !is_page(array('servicios', 'unete')) ) : ?>
         <!-- shortcode Únete -->
         <div class="content_wrap [ unete-footer ]">
-            <?php echo do_shortcode('
-                [vc_row][vc_column][vc_cta h2="Únete" h4="Forma parte de Plants in a Bottle y adquiere todos los beneficios doTERRA" txt_align="center" shape="square" style="flat" color="black" add_button="bottom" btn_title="haz click aquí" btn_style="3d" btn_color="violet" btn_size="lg" btn_align="center" btn_css_animation="bottom-to-top" css_animation="bottom-to-top" css=".vc_custom_1497121685552{background-image: url(http://localhost:8888/pixab/wp-content/uploads/2015/08/hero-1.jpg?id=2887) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border: 0px groove #256d3c !important;}" btn_link="url:%23||"][/vc_cta][/vc_column][/vc_row]
-            ');; ?>
+            <div class="vc_row wpb_row vc_row-fluid">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <section class="vc_cta3-container">
+                                <div class="vc_general vc_cta3 vc_cta3-style-flat vc_cta3-shape-square vc_cta3-align-center vc_cta3-color-black vc_cta3-icon-size-md vc_cta3-actions-bottom  wpb_animate_when_almost_visible wpb_bottom-to-top vc_custom_1497121685552 wpb_start_animation">
+                                    <div class="vc_cta3_content-container">
+                                        <div class="vc_cta3-content">
+                                            <header class="vc_cta3-content-header">
+                                                <h2>Únete</h2>
+                                                <h4>Forma parte de Plants in a Bottle y adquiere todos los beneficios doTERRA</h4>
+                                            </header>
+                                        </div>
+                                        <div class="vc_cta3-actions">
+                                            <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_bottom-to-top vc_btn3-center wpb_start_animation">
+                                             <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-violet" href="<?php echo site_url('/unete'); ?>" title="">haz click aquí</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     <?php endif; ?>
 
