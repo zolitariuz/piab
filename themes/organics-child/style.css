@@ -407,3 +407,24 @@ abbr.required {
 	width: 100%!important;
 	text-align: center;
 }
+
+/* Home */
+.texto-introduccion .vc_col-sm-6 {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.texto-introduccion .vc_col-sm-6:nth-child(2) {
+	font-size: 18px;
+	line-height: 24px;
+}
+@media(min-width: 768px){
+	.texto-introduccion .vc_col-sm-6:nth-child(2) {
+		text-align: right;
+	}
+}
+@media(max-width: 767px){
+	.texto-introduccion .vc_col-sm-6:nth-child(2) {
+		margin-top: 20px;
+	}
+}
