@@ -454,8 +454,8 @@ abbr.required {
 .post_info_tags {
 
 }
-.sc_socials .icon-facebook,
-.sc_socials .icon-twitter-1 {
+.single .sc_socials .icon-facebook,
+.single .sc_socials .icon-twitter-1 {
 	color: #fff;
 }
 
@@ -502,10 +502,18 @@ abbr.required {
 }
 
 /* Mi cuenta */
-.woocommerce-account .woocommerce-MyAccount-navigation {
+.woocommerce-account .content_wrap h1:not(.page_title) {
 	display: none;
 }
-.woocommerce-account .woocommerce-MyAccount-content {
-    float: none;
-    width: 100%;
+.woocommerce-form__label-for-checkbox {
+	display: block!important;
 }
+.woocommerce-form__label-for-checkbox input,
+.woocommerce-form__label-for-checkbox span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.woocommerce-account .woocommerce-Addresses .woocommerce-Address {
+	width: 100%;
+}
+

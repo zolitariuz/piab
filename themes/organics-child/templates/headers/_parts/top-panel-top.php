@@ -106,12 +106,12 @@ if (in_array('open_hours', $top_panel_top_components) && ($open_hours=trim(organ
 		// Anyone can register ?
 		if ( (int) get_option('users_can_register') > 0) {
                 ?>
-                <li class="menu_user_register"><a href="#popup_registration" class="popup_link popup_register_link icon-pencil8"><?php esc_html_e('Register', 'organics'); ?></a><?php
+                <li class="menu_user_register"><a href="#popup_registration" class="popup_link popup_register_link icon-pencil8"><?php esc_html_e('Registrate', 'organics'); ?></a><?php
 				if (organics_get_theme_option('show_login')=='yes') {
 					require_once organics_get_file_dir('templates/headers/_parts/register.php');
 				}?></li>
 		<?php } ?>
-                <li class="menu_user_login"><a href="#popup_login" class="popup_link popup_login_link icon-user189"><?php esc_html_e('Login', 'organics'); ?></a><?php
+                <li class="menu_user_login"><a href="#popup_login" class="popup_link popup_login_link icon-user189"><?php esc_html_e('Ingresa', 'organics'); ?></a><?php
                     if (organics_get_theme_option('show_login')=='yes') {
 					require_once organics_get_file_dir('templates/headers/_parts/login.php');
                     }?></li>
@@ -127,7 +127,7 @@ if (in_array('open_hours', $top_panel_top_components) && ($open_hours=trim(organ
 						?><span class="user_avatar"><?php echo trim($user_avatar); ?></span><?php
 					}?><span class="user_name"><?php echo trim($current_user->display_name); ?></span></a>
                 </li>
-			<li class="menu_user_logout"><a href="<?php echo wp_logout_url(home_url()); ?>" class="icon icon-logout"><?php esc_html_e('Logout', 'organics'); ?></a></li>
+			<li class="menu_user_logout"><a href="<?php echo wp_logout_url(home_url()); ?>" class="icon icon-logout"><?php esc_html_e('Salir', 'organics'); ?></a></li>
             <?php
             }
         }

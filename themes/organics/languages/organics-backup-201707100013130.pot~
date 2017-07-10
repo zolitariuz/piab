@@ -1,21 +1,20 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Organics\n"
-"POT-Creation-Date: 2017-07-10 00:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2016-03-07 12:19+0200\n"
+"PO-Revision-Date: 2016-03-07 12:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: AxiomThemes\n"
-"Language: \n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: _e;gettext;gettext_noop;__;_x;_n_noop\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: ."
+"X-Poedit-SearchPath-0: .\n"
 
 #: fw/core/core.admin.php:153 fw/lib/tgm/class-tgm-plugin-activation.php:168
 #, php-format
@@ -48,9 +47,9 @@ msgstr ""
 #: fw/core/core.admin.php:158 fw/lib/tgm/class-tgm-plugin-activation.php:173
 #, php-format
 msgid ""
-"Sorry, but you do not have the correct permissions to activate the %s plugin."
-" Contact the administrator of this site for help on getting the plugin "
-"activated."
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
 msgstr ""
 
 #: fw/core/core.admin.php:159 fw/lib/tgm/class-tgm-plugin-activation.php:174
@@ -80,8 +79,8 @@ msgstr ""
 #, php-format
 msgid ""
 "Specify the color for each element in the scheme \"%s\". After that you will "
-"be able to use your color scheme for the entire page, any part thereof "
-"and/or for the shortcodes!"
+"be able to use your color scheme for the entire page, any part thereof and/"
+"or for the shortcodes!"
 msgstr ""
 
 #: fw/core/core.customizer/core.customizer.php:320
@@ -331,7 +330,6 @@ msgid "Site %s - Contact form message from %s"
 msgstr ""
 
 #: fw/core/core.shortcodes/shortcodes.php:1158
-msgctxt "Nombre:"
 msgid "Name:"
 msgstr ""
 
@@ -1375,8 +1373,8 @@ msgstr ""
 
 #: includes/theme.options.php:608
 msgid ""
-"Show Social icons in the mobile menu and Top Panel Style \"Socials "
-"Ecommerce\""
+"Show Social icons in the mobile menu and Top Panel Style \"Socials Ecommerce"
+"\""
 msgstr ""
 
 #: includes/theme.options.php:664
@@ -1385,10 +1383,10 @@ msgstr ""
 
 #: includes/theme.options.php:671
 msgid ""
-"Upload a 16px x 16px image that will represent your website's favicon.<br />"
-"<em>To ensure cross-browser compatibility, we recommend converting the "
-"favicon into .ico format before uploading. (<a href='http://www.favicon.cc/'>"
-"www.favicon.cc</a>)</em>"
+"Upload a 16px x 16px image that will represent your website's favicon.<br /"
+"><em>To ensure cross-browser compatibility, we recommend converting the "
+"favicon into .ico format before uploading. (<a href='http://www.favicon."
+"cc/'>www.favicon.cc</a>)</em>"
 msgstr ""
 
 #: includes/theme.options.php:678
@@ -1726,8 +1724,8 @@ msgstr ""
 
 #: includes/theme.options.php:1661
 msgid ""
-"Select location for the dedicated content or featured image in the "
-"\"excerpt\" blog style"
+"Select location for the dedicated content or featured image in the \"excerpt"
+"\" blog style"
 msgstr ""
 
 #: includes/theme.options.php:1672
@@ -2136,10 +2134,10 @@ msgstr ""
 #: includes/theme.options.php:2564
 msgid ""
 "Show additional filters (on post formats, tags and categories) in admin "
-"panel page \"Posts\". <br>Attention! If you have more than 2.000-3.000 posts,"
-" enabling this option may cause slow load of the \"Posts\" page! If you "
-"encounter such slow down, simply open Appearance - Theme Options - Service "
-"and set \"No\" for this option."
+"panel page \"Posts\". <br>Attention! If you have more than 2.000-3.000 "
+"posts, enabling this option may cause slow load of the \"Posts\" page! If "
+"you encounter such slow down, simply open Appearance - Theme Options - "
+"Service and set \"No\" for this option."
 msgstr ""
 
 #: includes/theme.options.php:2571
@@ -2187,8 +2185,8 @@ msgid ""
 "modified the source code in the js or css files, regardless of this option "
 "will be used latest (modified) version stylesheets and scripts. You can re-"
 "create minified versions of files using on-line services (for example <a "
-"href=\"http://yui.2clics.net/\" target=\"_blank\">http://yui.2clics.net/</a>)"
-" or utility <b>yuicompressor-x.y.z.jar</b>"
+"href=\"http://yui.2clics.net/\" target=\"_blank\">http://yui.2clics.net/</"
+"a>) or utility <b>yuicompressor-x.y.z.jar</b>"
 msgstr ""
 
 #: includes/theme.options.php:2622
@@ -2858,8 +2856,8 @@ msgstr ""
 
 #: plugins/type.team.php:1021 plugins/type.team.php:1410
 msgid ""
-"Team member's socials icons: name=url|name=url... For example: facebook=http:"
-"//facebook.com/myaccount|twitter=http://twitter.com/myaccount"
+"Team member's socials icons: name=url|name=url... For example: "
+"facebook=http://facebook.com/myaccount|twitter=http://twitter.com/myaccount"
 msgstr ""
 
 #: plugins/type.team.php:1031
@@ -2999,8 +2997,8 @@ msgstr ""
 
 #: templates/404.php:43
 msgid ""
-"Go back, or return to <a target=\"_blank\" href=\"http://themeforest."
-"net/user/axiomthemes\">http://themeforest.net</a> to choose a new page."
+"Go back, or return to <a target=\"_blank\" href=\"http://themeforest.net/"
+"user/axiomthemes\">http://themeforest.net</a> to choose a new page."
 msgstr ""
 
 #: templates/_parts/counters.php:7

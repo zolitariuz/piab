@@ -23,4 +23,13 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_localize_script( 'piab_functions', 'siteUrl', SITEURL );
 });
 
+/*Remover secciones woocommerce*/
 remove_action('woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs',10);
+
+/*Easy password in register*/
+function wc_ninja_remove_password_strength() {
+  if ( wp_script_is( 'wc-password-strength-meter', 'enqueued' ) ) {
+    wp_dequeue_script( 'wc-password-strength-meter' );
+  }
+}
+add_action( 'wp_print_scripts', 'wc_ninja_remove_password_strength', 100 );
