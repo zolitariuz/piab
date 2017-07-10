@@ -173,7 +173,8 @@ h5.sc_title p {
 .home .menu_main_wrap {
 	text-align: center;
 }
-.page-id-3110 .top_panel_title {
+.page-id-3110 .top_panel_title,
+.logo_slogan {
 	display: none;
 }
 .logo img {
@@ -517,3 +518,8 @@ abbr.required {
 	width: 100%;
 }
 
+/* Tankyou page */
+.woocommerce-order-received.woocommerce-checkout .col2-set {
+    width: 100%;
+    padding-right: 0px;
+}
