@@ -57,6 +57,35 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 	.related li { width: 33.3333%!important; }
 }
 
+.related.products ul li:nth-child(4),
+.related.products ul li:nth-child(5),
+.mfp-figure figcaption {
+	display: none!important;
+}
+
+.mfp-container button:hover {
+	background-color: transparent!important;
+}
+
+.woocommerce-product-gallery__image {
+	position: relative;
+	overflow: hidden;
+}
+.woocommerce-product-gallery__image:not(.featured-image) a {
+	display: block;
+	width: 100%;
+	padding-bottom: 100%;
+}
+.woocommerce-product-gallery__image:not(.featured-image) a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 /* Quantity increment */
 .quantity {
 	margin-top: 0px!important;
@@ -98,9 +127,9 @@ fieldset {
 }
 
 /* Videos */
-.page-id-2950 .isotope_item .post_format_video .post_content,
-.page-id-3037 .isotope_item .post_format_video .post_content,
-.home .isotope_item .post_format_video .post_content {
+.page-id-2950 .isotope_item .post_format_video .post_content .post_descr,
+.page-id-3037 .isotope_item .post_format_video .post_content .post_descr,
+.page-id-846 .isotope_item .post_format_video .post_content .post_descr {
 	display: none!important;
 }
 
@@ -147,6 +176,9 @@ fieldset {
 .page_content_wrap {
 	padding: 20px!important;
 }
+.page-id-846 .page_content_wrap {
+	padding: 0px!important;
+}
 .sc_icon {
 	margin-bottom: 0px!important
 }
@@ -170,7 +202,7 @@ h5.sc_title p {
 }
 
 /* Header */
-.home .menu_main_wrap {
+.page-id-846 .menu_main_wrap {
 	text-align: center;
 }
 .page-id-3110 .top_panel_title,
@@ -280,6 +312,11 @@ footer .widget_number_4 {
 	}
 }
 
+footer .icon-footer {
+	width: 20px;
+	display: inline-block;
+}
+
 /* Contact form 7 */
 form.wpcf7-form input[type="submit"]{
 	background-color: #8d6dc4;
@@ -318,6 +355,8 @@ div.wpcf7-validation-errors,
 div.wpcf7-response-output {
 	border: 0px;
 	text-align: center;
+	color: #6e48b1;
+	font-weight: 700;
 }
 .ajax-loader { display: none!important;}
 @media(max-width: 767px){
@@ -522,4 +561,24 @@ abbr.required {
 .woocommerce-order-received.woocommerce-checkout .col2-set {
     width: 100%;
     padding-right: 0px;
+}
+
+/* Espera */
+.page-id-3236 header,
+.page-id-3236 footer,
+.page-id-3236 .header_mobile,
+.page-id-3236 .header_mobile,
+.page-id-3236 .top_panel_title,
+.page-id-3236 .unete-footer,
+.page-id-3236 .post_title,
+.page-id-3236 .copyright_wrap_inner,
+.page-id-3236 .scroll_to_top  {
+	display: none!important;
+}
+
+.page-id-3236 .page_content_wrap {
+	min-height: 100vh;
+	background-image: url(http://plantsinabottle.com/wp-content/uploads/2017/07/bg-main-0011.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }

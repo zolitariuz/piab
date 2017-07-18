@@ -20,7 +20,6 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-2.1.1.min.js', array(''), '2.1.1', true );
 	wp_enqueue_script( 'piab_functions', JSPATH.'functions.js', array('jquery'), '1.0', true );
 
-	wp_localize_script( 'piab_functions', 'siteUrl', SITEURL );
 });
 
 /*Remover secciones woocommerce*/
@@ -33,3 +32,4 @@ function wc_ninja_remove_password_strength() {
   }
 }
 add_action( 'wp_print_scripts', 'wc_ninja_remove_password_strength', 100 );
+
