@@ -12,7 +12,7 @@ var $=jQuery.noConflict();
 
 		});
 
-		$(".btn-scroll-unete a").click(function() {
+		$(".btn-scroll-unete").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#section-unete").offset().top - 100
 		    }, 700);

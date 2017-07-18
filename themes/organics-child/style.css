@@ -21,6 +21,27 @@ Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-bac
 .text-center { text-align: center; }
 .fw-600 { font-weight: 600; }
 
+html,
+.widget_area .widget_title,
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway';
+}
+
+.text-transforme-none,
+.text-transforme-none h1,
+.text-transforme-none h2,
+.text-transforme-none h3,
+.text-transforme-none h4,
+.text-transforme-none h5,
+.text-transforme-none h6,
+.widget_number_1 h5 {
+	text-transform: none!important;
+}
+
+.text-style-italic {
+	font-style: italic;
+}
+
 /* Archive product*/
 .quick_view_button {
 	display: none!important;
@@ -258,9 +279,9 @@ h5.sc_title p {
 }
 
 /* Footer */
-.unete-footer section {
-	margin-bottom: 10px;
-	margin-top: 20px;
+section.unete-footer  {
+	margin-bottom: 20px;
+	margin-top: 0px;
 }
 footer,
 footer .footer_wrap_inner,

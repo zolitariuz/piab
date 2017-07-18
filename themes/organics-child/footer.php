@@ -17,7 +17,7 @@ if (organics_get_custom_option('body_style')!='fullscreen') organics_close_wrapp
 		 <section class="content_wrap [ unete-footer ]">
 			<div class="box-unete">
 				<h2>Únete</h2>
-				<h4>Forma parte de Plants in a Bottle y adquiere todos los beneficios doTERRA</h4>
+				<h4>Forma parte de Plants in a Bottle y adquiere todos los beneficios dōTERRA</h4>
 				<a class="btn-secondary-theme" href="<?php echo site_url('/unete'); ?>" title="">haz click aquí</a>
 			</div>
 		</section>
