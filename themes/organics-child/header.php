@@ -21,6 +21,34 @@ $top_panel_scheme = organics_get_custom_option('top_panel_scheme');
 	<meta name="viewport" content="width=device-width, initial-scale=1<?php echo (organics_get_theme_option('responsive_layouts') == 'yes' ? ', maximum-scale=1' : ''); ?>">
     <meta name="format-detection" content="telephone=no">
 
+		<!-- Facebook, Twitter metas -->
+		<meta property="og:type" content="website" />
+		<meta property="og:image:width" content="210" />
+		<meta property="og:image:height" content="110" />
+		<meta property="fb:app_id" content="149936212117170" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@Piab" />
+
+		<?php if (is_single()) {
+			global $post; ?>
+			<meta property="og:url" content="<?php echo get_permalink(); ?>" />
+			<meta property="og:title" content="<?php the_title(); ?>">
+			<meta property="og:description" content="<?php the_content(); ?>" />
+			<meta property="og:image" content="<?php the_post_thumbnail_url('medium'); ?>" alt="imagen destacada">
+			<meta name="twitter:title" content="<?php the_title(); ?>" />
+			<meta name="twitter:description" content="<?php the_content(); ?>" />
+			<meta name="twitter:image" content="<?php the_post_thumbnail_url('medium'); ?>" alt="imagen destacada">
+		<?php } else { ?>
+			<meta property="og:url" content="<?php echo site_url(); ?>" />
+			<meta property="og:title" content="<?php bloginfo('name'); ?>">
+			<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+			<meta property="og:image" content="<?php echo THEMEPATH; ?>images/logo.png" alt="imagen destacada">
+			<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+			<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
+			<meta name="twitter:image" content="<?php echo THEMEPATH; ?>images/logo.png" alt="imagen destacada">
+		<?php } ?>
+
+
 	<?php
 	if (floatval(get_bloginfo('version')) < 4.1) {
 		?><title><?php wp_title( '|', true, 'right' ); ?></title><?php
