@@ -42,6 +42,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 }
 
+.btn-bg-primary a {
+    border-color: #256D3C!important;
+	background-color: #256D3C!important;
+}
+.btn-bg-primary a:hover {
+	background-color: #26713e!important;
+	border-color: #26713e!important;
+}
+
 /* Archive product*/
 .quick_view_button {
 	display: none!important;
@@ -73,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .summary h1 {
 	text-transform: uppercase;
 }
+.related.products { clear: both; }
 .related > h2 { font-size: 22px; }
 @media(min-width: 480px){
 	.related li { width: 33.3333%!important; }
@@ -175,6 +185,7 @@ fieldset {
 	margin: 5px 0!important;
 }
 
+
 	/*Ocultar elementos de expert*/
 .isotope_item .post_descr blockquote {
 	display: none!important;
@@ -188,6 +199,19 @@ fieldset {
 .page-id-3028 .post_format_audio,
 .page-id-3028 .post_format_link {
 	display: none!important;
+}
+
+/* Single */
+.single-post .sidebar {
+	display: none!important;
+}
+.single-post .content {
+	width: 100%!important;
+}
+.single-post .post_info_item,
+.single-post .post_info_item a,
+.share_caption {
+	font-family: 'Raleway';
 }
 
 /* Elementos theme */
@@ -467,11 +491,13 @@ abbr.required {
     color: #6e48b1;
 	border: 2px solid #6e48b1;
 }
+
 @media(min-width: 768px){
 	.offset-2col .beneficio:first-child {
 		margin-left: 16.6%;
 	}
 }
+
 /* 404 */
 .error404 .page_content_wrap {
 	background-color: #fff!important;
@@ -533,6 +559,9 @@ abbr.required {
 	padding: 28px;
 	text-align: center;
 	margin-top: 20px;
+	background-image: url(images/hero-2.jpg) !important;
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 .box-unete h2 {
 	font-family: Raleway;
