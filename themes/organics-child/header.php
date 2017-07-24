@@ -158,18 +158,6 @@ $top_panel_scheme = organics_get_custom_option('top_panel_scheme');
 				</div>
 			<?php endif; ?>
 
-			<?php if ( is_page('unete') ) : ?>
-				<!-- shortcode Únete -->
-				<div class="[ clearfix ]"></div>
-				 <section class="content_wrap [ unete-footer ]">
-					<div class="box-unete">
-						<h2>Únete</h2>
-						<h4>Forma parte de Plants in a Bottle y adquiere todos los beneficios dōTERRA</h4>
-						<div class="btn-scroll-unete [ btn-secondary-theme ]">haz click aquí</div>
-					</div>
-				</section>
-			<?php endif; ?>
-
 			<div class="page_content_wrap page_paddings_<?php echo esc_attr(organics_get_custom_option('body_paddings')); ?>">
 
 				<?php
