@@ -335,7 +335,7 @@ footer .widget_number_4 {
 
 footer .icon-footer {
 	width: 20px;
-	display: inline-block;
+	display: inline-block; //icon-mail-1 icon-facebook
 }
 
 /* Contact form 7 */
@@ -379,7 +379,14 @@ div.wpcf7-response-output {
 	color: #6e48b1;
 	font-weight: 700;
 }
-.ajax-loader { display: none!important;}
+.ajax-loader {
+	text-align: center;
+	display: block!important;
+	margin: auto!important;
+	margin-top: 10px!important;
+	margin-bottom: -20px!important;
+	background-image: url(images/ajax-loader.gif)!important;
+}
 @media(max-width: 767px){
 	form.wpcf7-form .wpcf7-list-item,
 	form.wpcf7-form .col-6 {
@@ -603,3 +610,4 @@ abbr.required {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
