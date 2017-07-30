@@ -202,16 +202,18 @@ fieldset {
 }
 
 /* Single */
-.single-post .sidebar {
-	display: none!important;
-}
-.single-post .content {
-	width: 100%!important;
-}
 .single-post .post_info_item,
 .single-post .post_info_item a,
 .share_caption {
 	font-family: 'Raleway';
+}
+
+/* Single product*/
+.single-product .sidebar {
+	display: none!important;
+}
+.single-product .content {
+	width: 100%!important;
 }
 
 /* Elementos theme */
@@ -409,7 +411,12 @@ div.wpcf7-response-output {
 	margin: auto!important;
 	margin-top: 10px!important;
 	margin-bottom: -20px!important;
-	background-image: url(images/ajax-loader.gif)!important;
+	width: 30px!important;
+	height: 30px!important;
+	background-image: url(images/ajax-loader2.jpg)!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 @media(max-width: 767px){
 	form.wpcf7-form .wpcf7-list-item,
